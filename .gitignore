@@ -1,0 +1,17 @@
+# Personal config
+LocalChat/config.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Database (personal message history)
+*.db
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
