@@ -2,6 +2,12 @@ import json
 import os
 import uuid
 
+CHUNK_SIZE = 4096
+SHARED_DIR = "shared"
+DOWNLOAD_DIR = "downloads"
+TCP_PORT = 5000
+DISCOVERY_PORT = 5001
+
 CONFIG_FILE = os.path.join(os.path.dirname(__file__), "config.json")
 
 def load_config():
