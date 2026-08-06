@@ -16,7 +16,9 @@ def make_msg(from_name: str, text:str) -> dict:
     """Sent when a peer leaves."""
     return{
         "type" : BYE,
-        "from" : from_name
+        "from" : from_name,
+        "text" : text,
+        "timestamp" : int(time.time())
     }
     
 def make_file_list(files: list) -> dict:
@@ -50,4 +52,11 @@ def make_file_done(filename: str) -> dict:
     return{
         "type" : FILE_DONE,
         "file" : filename
+    }
+    
+def make_bye(from_name: str) -> dict:
+    """Sent when a peer leaves."""
+    return {
+        "type": BYE,
+        "from": from_name
     }
